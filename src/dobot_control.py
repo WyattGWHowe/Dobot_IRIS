@@ -34,6 +34,8 @@ class DobotDemo:
         threading.Thread(target=self.GetFeed, daemon=True).start()
 
         # 定义两个目标点
+        
+        # These points are incorrect, so it may return an error. Trial and error should let you plan - I can add additional libs if needed.
         point_a = DobotIK.calc_inv_kin(3,3,3,3)
         point_b = DobotIK.calc_inv_kin(3,3,3,3)
 
